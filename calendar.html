@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-9 btn-group" role="group">
+        <button class="btn btn-primary" ng-click="move(-1)"><i class="glyphicon glyphicon-chevron-left"></i></button>
+        <button class="btn btn-primary" ng-click="move(1)"><i class="glyphicon glyphicon-chevron-right"></i></button>
+    </div>
+    <div class="col-md-3 btn-group pull-right" role="group">
+        <button type="button" class="btn btn-primary" ng-click="toggleMode('month')">Month</button>
+        <button type="button" class="btn btn-primary" ng-click="toggleMode('week')">Week</button>
+        <button type="button" class="btn btn-primary" ng-click="toggleMode('day')">Day</button>
+    </div>
+</div>
+
+<div ng-switch="calendarMode">
+    <month-calendar ng-switch-when="month"></month-calendar>
+    <week-calendar ng-switch-when="week"></week-calendar>
+    <day-calendar ng-switch-when="day"></day-calendar>
+</div>
+

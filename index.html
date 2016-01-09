@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US" ng-app="Calendar">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Calendar with Angular</title>
+
+    <meta name="viewport" content="width=device-width">
+    <link href="/angular/library/bootstrap.min.css" rel="stylesheet" />
+    <link href="calendar.css" rel="stylesheet" />
+</head>
+
+<body nc-controller="calendarCtrl">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <h1>Calendar</h1>
+            </div>
+            <div class="col-md-10">
+                <event-calendar></event-calendar>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="application/javascript" src="/angular/library/jquery-2.1.4.min.js"></script>
+    <script type="application/javascript" src="/angular/library/bootstrap.min.js"></script>
+    <script src="/angular/library/angular.min.js"></script>
+    <script type="application/javascript" src="calendar.js"></script>
+    <script type="application/javascript" src="controller.js"></script>
+</body>
+
+</html>

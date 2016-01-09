@@ -1,0 +1,105 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/proxima_nova_regular-webfont.eot');
+    src: url('../fonts/proxima_nova_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_regular-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_regular-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../fonts/proxima_nova_semibold-webfont.eot');
+    src: url('../fonts/proxima_nova_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_semibold-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_semibold-webfont.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../fonts/proxima_nova_light-webfont.eot');
+    src: url('../fonts/proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_light-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_light-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../fonts/proxima_nova_extrabold-webfont.eot');
+    src: url('../fonts/proxima_nova_extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Fonts */
+
+body {
+	font-family: 'proxima_novalight';
+    background-color: #c4f5f5;
+    min-height: 720px;
+    margin-top: 20px;
+}
+
+body h1,h2,h3,h4,h5{
+	font-family: 'proxima_novasemibold';
+}
+
+.rr-calendar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.rr-calendar tr th {
+    background-color: #ff6600;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.rr-calendar tr td {
+    background-color: white;
+    font-size: 18px;
+    height: 99px;
+    text-align: right;
+}
+
+.rr-calendar tr td.disabled {
+    color: lightgray;
+}
+
+.rr-calendar tr.week-name th, .rr-calendar tr.week-day th, .rr-calendar tr.week-event td {
+    background-color: white;
+    text-align: left;
+}
+
+.rr-calendar tr.week-name th {
+    font-size: 14px;
+}
+
+.rr-calendar tr.week-day th {
+    font-size: 48px;
+}
+
+.rr-calendar tr.week-event td {
+    height: 400px;
+}

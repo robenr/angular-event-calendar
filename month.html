@@ -1,0 +1,16 @@
+<h3>{{title}}</h3>
+
+<table class="table table-bordered rr-calendar">
+    <tr>
+        <th>sun</th>
+        <th>mon</th>
+        <th>tue</th>
+        <th>wed</th>
+        <th>thr</th>
+        <th>fri</th>
+        <th>sat</th>
+    </tr>
+    <tr ng-repeat="row in rows">
+        <td ng-repeat="dt in row" ng-class="{'disabled':dt.disabled}">{{::dt.label}}</td>
+    </tr>
+</table>
