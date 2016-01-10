@@ -1,4 +1,4 @@
-<h1>week mode</h1>
+<h1>{{header}}</h1>
 
 <table class="table rr-calendar">
     <tr class="week-name">
@@ -11,13 +11,7 @@
         <th>Sat</th>
     </tr>
     <tr class="week-day">
-        <th>16</th>
-        <th>17</th>
-        <th>18</th>
-        <th>19</th>
-        <th>20</th>
-        <th>21</th>
-        <th>22</th>
+        <th ng-repeat="dt in days">{{::dt.label}}</th>
     </tr>
     <tr class="week-event">
         <td></td>

@@ -97,7 +97,7 @@ body h1,h2,h3,h4,h5{
 }
 
 .rr-calendar tr.week-day th {
-    font-size: 48px;
+    font-size: 30px;
 }
 
 .rr-calendar tr.week-event td {
